@@ -1,0 +1,34 @@
+.main-contaier{
+    padding: 20px 40px;
+    width: 100%;
+    display: grid;
+    grid-row-gap: 3rem;
+    grid-column-gap: 1rem;
+    grid-template-columns: auto auto auto auto;
+    flex-wrap: wrap;
+}
+
+button{
+    background-color:black;
+    color: #ffff;
+    border-radius: 25px;
+    padding: 10px 12px;
+    width: 10%;
+    cursor: pointer;
+    margin: 60px 45%;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 35px;
+}
+
+@media only screen and (max-width: 760px) {
+    .main-contaier{
+        width: 100vw;
+        display: flex;
+    }
+
+    button{
+        width: 50%;
+        margin: 60px 25%;
+    }
+}

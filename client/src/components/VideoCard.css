@@ -1,0 +1,42 @@
+.video_container{
+    width: 22rem;
+    height: 40vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+img{
+    width: 90%;
+    height: 30vh;
+    cursor: pointer;
+}
+
+h3{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.circle{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    background-color:#6563FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 35%;
+    cursor: pointer;
+}
+
+.video{
+    color: white;
+    cursor: pointer;
+}

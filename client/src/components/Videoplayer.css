@@ -1,0 +1,96 @@
+.videoplayer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.videoPlayer{
+    position: absolute;
+    top: -2%;
+    left: 50%;
+    transform: translate(-50%);
+    /* background-color:red; */
+}
+
+.backArrow{
+    position: absolute;
+    left: 50px;
+    cursor: pointer;
+    background-color: lightgray;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+}
+
+.menu{
+    width: 80%;
+    position: absolute;
+    bottom: 17.5%;
+    left: 10%;
+    /* background-color: blue; */
+}
+
+.first__row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.like__dislike__box, .like__box, .dislike__box{
+    display: flex;
+    cursor: pointer;
+}
+
+.like__dislike__box{
+    width: 9%;
+    justify-content: space-between;
+}
+
+.like__box, .dislike__box{
+    display: flex;
+    align-items: center;
+}
+
+.like__count, .dislike__count{
+    margin-left: 10px;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: 600;;
+}
+
+.upload__on{
+    font-size:12px;
+    font-weight:300;
+}
+
+.description__box{
+    /* background-color: red; */
+    position: absolute;
+    top: 5rem;
+    padding-bottom: 50px;
+}
+
+.heading{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 760px) {
+    .videoPlayer{
+        top: 5%;
+    }
+
+    .menu{
+        bottom: 11.3%;
+    }
+
+    .data{
+        width: 100%;
+        overflow: hidden;
+    }
+}
