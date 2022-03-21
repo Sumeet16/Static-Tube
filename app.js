@@ -12,7 +12,7 @@ app.use(function (req, res, next) {
 });
 
 app.use(cors({
-    origin: ["http://localhost:3000", "*"],
+    origin: ["*"],
     methods: ["GET", "POST"],
     credentials: true
 }))
