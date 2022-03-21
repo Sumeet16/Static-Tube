@@ -10,7 +10,7 @@ const VideoColl = () => {
 
   const callVideoData = async (type) => {
     try {
-      const url = type === "start" ? "http://localhost:5000/video" : "http://localhost:5000/more"
+      const url = type === "start" ? "/video" : "/more"
       const res = await fetch(url, {
         method: "GET",
         credentials: 'include',

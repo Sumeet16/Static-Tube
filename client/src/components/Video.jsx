@@ -66,7 +66,7 @@ const Video = () => {
     // console.log(thumbnail);
     // console.log(video);
 
-    const res = await fetch("http://localhost:5000/upload", {
+    const res = await fetch("/upload", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

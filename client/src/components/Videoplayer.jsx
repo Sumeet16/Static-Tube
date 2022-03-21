@@ -16,7 +16,7 @@ const Videoplayer = () => {
     const findVideo = async () => {
         const queryParams = new URLSearchParams(window.location.search);
         const id = queryParams.get('watch');
-        const res = await fetch("http://localhost:5000/watch", {
+        const res = await fetch("/watch", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -46,7 +46,7 @@ const Videoplayer = () => {
         const id = queryParams.get('watch');
         const count = currentLikes;
         const status = like;
-        const res = await fetch("http://localhost:5000/update", {
+        const res = await fetch("/update", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
