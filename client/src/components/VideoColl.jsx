@@ -52,7 +52,7 @@ const VideoColl = () => {
           })}
         </div>
       </form>
-    <button onClick={viewMore}>View More</button>
+      {videoData.length > 8 ? <button onClick={viewMore}>View More</button> : <></>}
     </>
   )
 }
